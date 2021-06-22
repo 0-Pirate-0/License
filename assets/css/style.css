@@ -1,0 +1,154 @@
+@font-face {
+    font-family: "Babes";
+    font-display: swap;
+    src: url("../fonts/Babes.woff") format("woff"), url("../fonts/Babes.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    font-family: sans-serif;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    line-height: 1em;
+    background-color: #333;
+}
+
+.license {
+    width: 100%;
+    max-width: 590px;
+    padding: 30px;
+    color: #787878;
+    background-color: #f8f8f8;
+    border: 10px solid #ebebeb;
+}
+
+.license__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 15px 19px 25px;
+    cursor: pointer;
+}
+
+.license__item:hover {
+    background-color: #ebf4f7;
+    box-shadow: inset 0 0 0 1px #b8d7e2;
+}
+
+.license__item input {
+    position: absolute;
+    width: 0;
+}
+
+.license__item .license__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.license__item .license__content span {
+    height: 34px;
+    width: 34px;
+    background-image: radial-gradient(circle, #0000 11px, #dadada 12px 16px, #0000 17px);
+}
+
+.license__item input:checked+.license__content span {
+    background-image: radial-gradient(circle, #0294bf 6px, #0000 7px 11px, #34648e 12px 16px, #0000 17px);
+}
+
+.license__item .license__content p {
+    font-family: "Babes";
+    font-size: 26px;
+    margin: 0 18px 5px;
+    letter-spacing: 0.7px;
+    text-transform: uppercase;
+}
+
+.license__item .license__price {
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.license__quantity {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: #000;
+    margin: 10px 0;
+    padding: 30px;
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+}
+
+.license__quantity p {
+    margin-right: 10px;
+}
+
+.license__quantity select {
+    padding: 5px 0;
+}
+
+.license__footer {
+    text-align: center;
+}
+
+.license__content--total {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 1em;
+    margin-top: 37px;
+    letter-spacing: 0.7px;
+    text-transform: uppercase;
+}
+
+.license__content--total p {
+    margin: 0;
+}
+
+.license__content--total span {
+    color: #3388a8;
+}
+
+.license__content--total span::before {
+    content: "$";
+}
+
+.license__content--total span::after {
+    content: "US";
+    font-family: "Babes";
+    font-size: 16px;
+    position: relative;
+    bottom: 0.5em;
+}
+
+.license__buy {
+    display: inline-block;
+    font-family: "Babes";
+    font-size: 14px;
+    color: #fff;
+    margin-top: 13px;
+    padding: 15px 60px;
+    border-radius: 30px;
+    background-color: #33a845;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.license__selected {
+    font-size: 18px;
+    margin-top: 50px;
+    letter-spacing: 1.5px;
+    color: #3388a8;
+}
