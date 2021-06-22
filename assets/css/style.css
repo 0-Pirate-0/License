@@ -20,6 +20,7 @@ body {
     min-height: 100vh;
     line-height: 1em;
     background-color: #333;
+    padding: 10px;
 }
 
 .license {
@@ -91,11 +92,13 @@ body {
 }
 
 .license__quantity p {
+    font-size: 1.2em;
     margin-right: 10px;
 }
 
 .license__quantity select {
     padding: 5px 0;
+    border: 1px solid #000;
 }
 
 .license__footer {
@@ -151,4 +154,63 @@ body {
     margin-top: 50px;
     letter-spacing: 1.5px;
     color: #3388a8;
+}
+
+@media (max-width: 559px) {
+    .license {
+        padding: 15px;
+    }
+
+    .license__item {
+        flex-direction: column;
+    }
+
+    .license__quantity p {
+        font-size: 1.5em;
+    }
+
+    .license__price {
+        font-size: 1.3em;
+        margin-top: 15px;
+    }
+
+    .license__selected {
+        margin-top: 35px;
+    }
+}
+
+@media (max-width: 399px) {
+    .license__item {
+        padding: 15px;
+    }
+
+    .license__item .license__content p {
+        font-size: 20px;
+    }
+
+    .license__selected span {
+        margin-top: 10px;
+        display: block;
+    }
+
+    .license__quantity p {
+        font-size: 1.2em;
+    }
+    .license__content--total {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 359px) {
+    .license__item .license__content {
+        flex-direction: column;
+    }
+
+    .license__item .license__content p {
+        margin-top: 10px;
+    }
+
+    .license__quantity p {
+        font-size: 1em;
+    }
 }
